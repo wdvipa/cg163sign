@@ -65,11 +65,11 @@ else:
     if("kt" in fss):
         if "cg163_ktkey" in os.environ:
             ktkey = os.environ.get("cg163_ktkey")
-    if "cg163" in os.environ:
-        datas = os.environ.get("cg163")
-    else:
-        print('您没有输入任何信息')
-        exit
+  if "cg163" in os.environ:
+    datas = os.environ.get("cg163")
+  else:
+    print('您没有输入任何信息')
+    exit
 groups = datas.split('\n')
 #初始化环境变量结尾
 
