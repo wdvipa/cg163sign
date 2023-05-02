@@ -119,7 +119,7 @@ class cg163anelQd(object):
             return
         server_url = "https://sctapi.ftqq.com/" + str(SKey) + ".send"
         data = {
-            'text': self.name + "大学习通知",
+            'text': self.name + "网易签到通知",
             'desp': msg
         }
         requests.post(server_url, data=data)
@@ -129,7 +129,7 @@ class cg163anelQd(object):
         if ktkey == '':
             return
         kt_url = 'https://push.xuthus.cc/send/' + str(ktkey)
-        data = ('大学习完成，点击查看详细信息~\n' + str(msg)).encode("utf-8")
+        data = ('网易签到完成，点击查看详细信息~\n' + str(msg)).encode("utf-8")
         requests.post(kt_url, data=data)
 
     #Telegram私聊推送
@@ -149,7 +149,7 @@ class cg163anelQd(object):
         if push_token == '':
             return
         token = push_token
-        title= '大学习通知'
+        title= '网易签到通知'
         content = msg
         url = 'http://www.pushplus.plus/send'
         data = {
